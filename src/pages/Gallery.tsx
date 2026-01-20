@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { useEffect } from "react";
 
 const galleryImages = [
   "https://scontent.fccu27-3.fna.fbcdn.net/v/t39.30808-6/512478853_3599015180234610_5590643670117237214_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=7xm_UW-j0PIQ7kNvwGu4IAW&_nc_oc=Adn0G7TSRZ4XH9Q7sum-lD6KtluaTnNbr_7Chb5A_icCtyzlilfa4PXhxZSz1fLGbQ4mD-rUH5XR89anKWCu0UYd&_nc_zt=23&_nc_ht=scontent.fccu27-3.fna&_nc_gid=ia5YS_mY6zmJ1CeOHDF_6g&oh=00_AfqMe4liDxgmQYXGAet9boPSW9baQLk-EVG77K_jUuwjdQ&oe=6975721E",
@@ -12,6 +13,13 @@ const galleryImages = [
 ];
 
 const Gallery = () => {
+  useEffect(() => {
+    const element = document.getElementById('gallery');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -40,7 +48,7 @@ const Gallery = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32" id="gallery">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
