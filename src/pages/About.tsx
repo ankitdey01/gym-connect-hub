@@ -5,7 +5,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { Trophy, Users, Target, Award } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "5000+", label: "Active Members" },
+  { icon: Users, value: "500+", label: "Active Members" },
   { icon: Trophy, value: "150+", label: "Competitions Won" },
   { icon: Target, value: "98%", label: "Goal Achievement" },
   { icon: Award, value: "25+", label: "Industry Awards" },

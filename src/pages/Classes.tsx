@@ -7,7 +7,7 @@ import { ArrowRight, Flame, Zap, Heart, Dumbbell, Timer, Users } from "lucide-re
 const allClasses = [
   {
     id: "hiit",
-    name: "HIIT Training",
+    name: "Weight Training",
     description: "High-intensity interval training designed to maximize calorie burn and improve cardiovascular fitness. Short bursts of intense exercise followed by brief recovery periods.",
     icon: Flame,
     duration: "45 min",
@@ -17,7 +17,7 @@ const allClasses = [
   },
   {
     id: "strength",
-    name: "Strength & Power",
+    name: "Personal Training",
     description: "Build functional strength and raw power through compound movements and progressive overload. Perfect for those looking to increase muscle mass and strength.",
     icon: Dumbbell,
     duration: "60 min",
@@ -27,7 +27,7 @@ const allClasses = [
   },
   {
     id: "cardio",
-    name: "Cardio Blast",
+    name: "Cardio Training",
     description: "Heart-pumping workouts combining various cardio exercises to boost endurance, burn fat, and improve overall cardiovascular health.",
     icon: Heart,
     duration: "50 min",
@@ -57,8 +57,8 @@ const allClasses = [
   },
   {
     id: "bootcamp",
-    name: "Boot Camp",
-    description: "Military-inspired group training that combines strength, cardio, and agility drills. An intense full-body workout that builds camaraderie.",
+    name: "Diet and Nutrition",
+    description: "Comprehensive nutrition guidance and meal planning to fuel your fitness goals. Learn about macronutrients, micronutrients, and sustainable eating habits.",
     icon: Users,
     duration: "55 min",
     level: "Intermediate",

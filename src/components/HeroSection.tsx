@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="H3 FITNESS Gym"
+          alt="H3 FITNESS"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-background/10" />
@@ -79,9 +79,9 @@ export function HeroSection() {
             className="grid grid-cols-3 gap-8 mt-16 max-w-lg"
           >
             {[
-              { value: "5000+", label: "Members" },
+              { value: "500+", label: "Members" },
               { value: "50+", label: "Classes/Week" },
-              { value: "20+", label: "Expert Trainers" },
+              { value: "2", label: "Expert Trainers" },
             ].map((stat, i) => (
               <div key={i} className="text-center sm:text-left">
                 <div className="font-display text-3xl md:text-4xl text-primary">

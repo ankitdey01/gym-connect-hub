@@ -33,36 +33,6 @@ const Contact = () => {
 
       <ContactSection />
 
-      {/* Map Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
-              FIND US
-            </h2>
-            <p className="text-muted-foreground">
-              Visit our state-of-the-art facility in the heart of the city
-            </p>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-secondary rounded-2xl h-80 flex items-center justify-center border border-border"
-          >
-            <p className="text-muted-foreground">Map integration coming soon</p>
-          </motion.div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );

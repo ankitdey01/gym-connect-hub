@@ -1,34 +1,12 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export function ContactSection() {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
-
   const contactInfo = [
-    { icon: MapPin, label: "Address", value: "123 Fitness Street, Gym City" },
-    { icon: Phone, label: "Phone", value: "(555) 123-4567" },
+    { icon: MapPin, label: "Address", value: "5 No, 51275, Kataganj, Bedibhawan, Kalyani, West Bengal 741250" },
+    { icon: Phone, label: "Phone", value: "090628 41189" },
     { icon: Mail, label: "Email", value: "info@H3 FITNESS.com" },
-    { icon: Clock, label: "Hours", value: "Mon-Sun: 5AM - 11PM" },
+    { icon: Clock, label: "Hours", value: "Mon-Sun: 6AM - 9:30PM (Fri Holiday)" },
   ];
 
   return (
@@ -77,87 +55,27 @@ export function ContactSection() {
             </div>
           </motion.div>
 
-          {/* Right: Contact Form */}
+          {/* Map Section */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <form
-              onSubmit={handleSubmit}
-              className="bg-card rounded-2xl p-8 border border-border"
-            >
-              <h3 className="font-display text-2xl text-foreground mb-6">
-                Send Us a Message
-              </h3>
-              <div className="space-y-4">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm text-muted-foreground mb-2 block">
-                      Full Name
-                    </label>
-                    <Input
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
-                      placeholder="John Doe"
-                      required
-                      className="bg-secondary border-border"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm text-muted-foreground mb-2 block">
-                      Email
-                    </label>
-                    <Input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) =>
-                        setFormData({ ...formData, email: e.target.value })
-                      }
-                      placeholder="john@example.com"
-                      required
-                      className="bg-secondary border-border"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="text-sm text-muted-foreground mb-2 block">
-                    Phone Number
-                  </label>
-                  <Input
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) =>
-                      setFormData({ ...formData, phone: e.target.value })
-                    }
-                    placeholder="(555) 123-4567"
-                    className="bg-secondary border-border"
-                  />
-                </div>
-                <div>
-                  <label className="text-sm text-muted-foreground mb-2 block">
-                    Message
-                  </label>
-                  <Textarea
-                    value={formData.message}
-                    onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
-                    }
-                    placeholder="Tell us about your fitness goals..."
-                    rows={4}
-                    required
-                    className="bg-secondary border-border resize-none"
-                  />
-                </div>
-                <Button variant="hero" size="xl" type="submit" className="w-full">
-                  <Send className="h-5 w-5 mr-2" />
-                  Send Message
-                </Button>
-              </div>
-            </form>
+            <h3 className="font-display text-2xl text-foreground mb-6">
+              Find Us
+            </h3>
+            <div className="aspect-video w-full rounded-2xl overflow-hidden border border-border">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3672.5!2d88.4770525!3d22.9535893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f895917f631dab:0x87a36634a370b77d!2sH3+Fitness+Gym!5e0!3m2!1sen!2s!4v!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </motion.div>
         </div>
       </div>

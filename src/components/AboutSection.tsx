@@ -24,6 +24,11 @@ export function AboutSection() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
+            <div className="text-center mb-6">
+              <h3 className="font-display text-2xl md:text-3xl text-foreground">
+                Himadri Chakraborty (Owner)
+              </h3>
+            </div>
             <div className="relative rounded-2xl overflow-hidden">
               <img
                 src={aboutImage}
@@ -58,7 +63,7 @@ export function AboutSection() {
               H3 FITNESS is a community of dedicated individuals who believe in pushing boundaries. 
               Founded in 2009, we've helped thousands transform their lives through fitness. 
               Our mission is simple: provide the tools, environment, and support you need to 
-              become the strongest version of yourself.
+              become the strongest and best version of yourself.
             </p>
 
             {/* Feature List */}

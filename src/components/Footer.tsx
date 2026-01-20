@@ -24,7 +24,7 @@ export function Footer() {
           <div>
             <h4 className="font-display text-lg mb-4 text-foreground">Quick Links</h4>
             <ul className="space-y-2">
-              {["About", "Classes", "Trainers", "Contact"].map((item) => (
+              {["About", "Classes", "Contact"].map((item) => (
                 <li key={item}>
                   <Link
                     to={`/${item.toLowerCase()}`}
@@ -43,11 +43,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>123 Fitness Street, Gym City, GC 12345</span>
+                <span>5 No, 51275, Kataganj, Bedibhawan, Kalyani, West Bengal 741250</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>(555) 123-4567</span>
+                <span>9062841189</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
@@ -61,16 +61,16 @@ export function Footer() {
             <h4 className="font-display text-lg mb-4 text-foreground">Hours</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex justify-between">
-                <span>Mon - Fri</span>
-                <span>5:00 AM - 11:00 PM</span>
+                <span>Mon - Thu</span>
+                <span>6:00 AM - 9:30 PM</span>
               </li>
               <li className="flex justify-between">
-                <span>Saturday</span>
-                <span>6:00 AM - 10:00 PM</span>
+                <span>Friday</span>
+                <span>Holiday</span>
               </li>
               <li className="flex justify-between">
-                <span>Sunday</span>
-                <span>7:00 AM - 9:00 PM</span>
+                <span>Sat - Sun</span>
+                <span>6:00 AM - 9:30 PM</span>
               </li>
             </ul>
           </div>
@@ -78,21 +78,37 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2024 H3 FITNESS. All rights reserved.
-          </p>
-          <div className="flex items-center gap-4">
-            {[Instagram, Facebook, Twitter].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                <Icon className="h-5 w-5" />
-              </a>
-            ))}
-          </div>
-        </div>
+  <p className="text-sm text-muted-foreground">
+    © 2026 H3 FITNESS. All rights reserved.
+  </p>
+  <div className="flex items-center gap-4">
+    <a
+      href="https://www.instagram.com/himadri.chakraborty.737/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+    >
+      <Instagram className="h-5 w-5" />
+    </a>
+    <a
+      href="https://www.facebook.com/himadri.chakraborty.737"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+    >
+      <Facebook className="h-5 w-5" />
+    </a>
+    <a
+      href="tel:7003175525"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+    >
+      <Phone className="h-5 w-5" />
+    </a>
+  </div>
+</div>
+
       </div>
     </footer>
   );

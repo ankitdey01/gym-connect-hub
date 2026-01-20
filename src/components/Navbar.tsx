@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Dumbbell } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Classes", path: "/classes" },
+  { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -21,7 +22,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <Dumbbell className="h-8 w-8 text-primary" />
+            <img src="/logo.png" alt="H3 Fitness Logo" className="h-11 w-11 -mt-4" />
             <span className="font-display text-2xl md:text-3xl tracking-wider text-foreground">
               H3 FITNESS
             </span>
