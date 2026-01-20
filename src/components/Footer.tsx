@@ -11,7 +11,7 @@ export function Footer() {
             <Link to="/" className="flex items-center gap-2">
               <Dumbbell className="h-8 w-8 text-primary" />
               <span className="font-display text-2xl tracking-wider text-foreground">
-                IRONFORGE
+                H3 FITNESS
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -51,7 +51,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>info@ironforge.com</span>
+                <span>info@H3 FITNESS.com</span>
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 IronForge. All rights reserved.
+            © 2024 H3 FITNESS. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             {[Instagram, Facebook, Twitter].map((Icon, i) => (

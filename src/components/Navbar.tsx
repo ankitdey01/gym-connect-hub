@@ -23,7 +23,7 @@ export function Navbar() {
           <Link to="/" className="flex items-center gap-2">
             <Dumbbell className="h-8 w-8 text-primary" />
             <span className="font-display text-2xl md:text-3xl tracking-wider text-foreground">
-              IRONFORGE
+              H3 FITNESS
             </span>
           </Link>
 

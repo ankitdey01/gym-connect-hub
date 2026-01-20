@@ -27,7 +27,7 @@ export function ContactSection() {
   const contactInfo = [
     { icon: MapPin, label: "Address", value: "123 Fitness Street, Gym City" },
     { icon: Phone, label: "Phone", value: "(555) 123-4567" },
-    { icon: Mail, label: "Email", value: "info@ironforge.com" },
+    { icon: Mail, label: "Email", value: "info@H3 FITNESS.com" },
     { icon: Clock, label: "Hours", value: "Mon-Sun: 5AM - 11PM" },
   ];
 

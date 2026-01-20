@@ -27,7 +27,7 @@ export function AboutSection() {
             <div className="relative rounded-2xl overflow-hidden">
               <img
                 src={aboutImage}
-                alt="Training at IronForge"
+                alt="Training at H3 FITNESS"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
@@ -55,7 +55,7 @@ export function AboutSection() {
               MORE THAN JUST A GYM
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              IronForge is a community of dedicated individuals who believe in pushing boundaries. 
+              H3 FITNESS is a community of dedicated individuals who believe in pushing boundaries. 
               Founded in 2009, we've helped thousands transform their lives through fitness. 
               Our mission is simple: provide the tools, environment, and support you need to 
               become the strongest version of yourself.

@@ -11,10 +11,10 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="IronForge Gym"
+          alt="H3 FITNESS Gym"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-background/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 

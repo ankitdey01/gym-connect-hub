@@ -29,7 +29,7 @@ const About = () => {
               Our Story
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mb-6">
-              ABOUT IRONFORGE
+              ABOUT H3 FITNESS
             </h1>
             <p className="text-muted-foreground text-lg">
               Building champions since 2009. Discover the passion, dedication, 
@@ -86,7 +86,7 @@ const About = () => {
                 EMPOWERING TRANSFORMATIONS
               </h2>
               <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-                At IronForge, we believe fitness is more than physical—it's mental, 
+                At H3 FITNESS, we believe fitness is more than physical—it's mental, 
                 emotional, and spiritual. Our mission is to create an inclusive environment 
                 where everyone, from beginners to elite athletes, can discover their potential, 
                 push their limits, and transform their lives. We're not just building bodies; 
