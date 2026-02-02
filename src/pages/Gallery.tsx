@@ -4,12 +4,12 @@ import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
 
 const galleryImages = [
-  "./assets/gallery1.png",
-  "./assets/gallery2.png",
-  "./assets/gallery3.png",
-  "./assets/gallery4.png",
-  "./assets/gallery5.png",
-  "./assets/gallery6.png",
+  "../assets/gallery1.png",
+  "../assets/gallery2.png",
+  "../assets/gallery3.png",
+  "../assets/gallery4.png",
+  "../assets/gallery5.png",
+  "../assets/gallery6.png",
 ];
 
 const Gallery = () => {
