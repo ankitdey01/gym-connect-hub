@@ -8,16 +8,21 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import gg from "../assets/gallery1.png"
+import gallery1 from "../assets/gallery1.png";
+import gallery2 from "../assets/gallery2.png";
+import gallery3 from "../assets/gallery3.png";
+import gallery4 from "../assets/gallery4.png";
+import gallery5 from "../assets/gallery5.png";
+import gallery6 from "../assets/gallery6.png";
 
 // Full gallery images
-  const galleryImages = [
-  "../assets/gallery1.png",
-  "../assets/gallery2.png",
-  "../assets/gallery3.png",
-  "../assets/gallery4.png",
-  "../assets/gallery5.png",
-  "../assets/gallery6.png",
+const galleryImages = [
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
 ];
 
 // Randomly select 2 images for showcase

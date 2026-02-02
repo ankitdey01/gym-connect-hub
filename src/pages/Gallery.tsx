@@ -3,13 +3,20 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
 
+import gallery1 from "../assets/gallery1.png";
+import gallery2 from "../assets/gallery2.png";
+import gallery3 from "../assets/gallery3.png";
+import gallery4 from "../assets/gallery4.png";
+import gallery5 from "../assets/gallery5.png";
+import gallery6 from "../assets/gallery6.png";
+
 const galleryImages = [
-  "../assets/gallery1.png",
-  "../assets/gallery2.png",
-  "../assets/gallery3.png",
-  "../assets/gallery4.png",
-  "../assets/gallery5.png",
-  "../assets/gallery6.png",
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
 ];
 
 const Gallery = () => {
